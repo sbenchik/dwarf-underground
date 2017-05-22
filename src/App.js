@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header/Header'
 import Article from './Article/Article'
 import Sidebar from './Sidebar/Sidebar'
-import Clickbait from './Clickbait/Clickbait'
+import ClickbaitContainer from './Clickbait/ClickbaitContainer'
 import Footer from './Footer/Footer'
 import './App.css';
 
@@ -16,7 +16,7 @@ class App extends Component {
           <aside className="large-4 medium-12 columns">
             <Sidebar />
           </aside>
-          <Clickbait />
+          <ClickbaitContainer />
         </main>
         <Footer />
       </div>
