@@ -38,7 +38,9 @@ class Comments extends Component{
                     <i className="fa fa-mail-forward"></i>
                     <span className="article-link-text" onClick={this.addComment}>Reply</span>
                 </a>
-                {this.state.comments.map((comment, i) => <Comment key={i} comment={comment} />)}
+                <div className="comments">
+                    {this.state.comments.map((comment, i) => <Comment key={i} comment={comment} />)}
+                </div>
             </div>
         )
     }
