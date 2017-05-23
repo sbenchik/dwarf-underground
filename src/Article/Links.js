@@ -11,6 +11,7 @@ class Links extends Component{
     }
     
     showComments(ev){
+        ev.preventDefault()
         this.setState({commentsVisible: !this.state.commentsVisible,})
     }
 
