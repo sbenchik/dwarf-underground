@@ -12,4 +12,4 @@ class NavLinks extends Component{
     }
 }
 
- export default NavLinks
+export default NavLinks

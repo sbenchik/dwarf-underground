@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Links from './Links'
+import NavLinks from './NavLinks'
 import './Header.css'
 
 const links = ['Home', 'About', 'Log in']
@@ -12,7 +12,7 @@ class Header extends Component{
             <div className="float-left logo">
               <img src="http://www.iconninja.com/files/409/4/1006/axe-icon.svg" alt="axe" />
             </div>
-            <Links links={links}/>
+            <NavLinks links={links}/>
           </div>
           <div className="headline text-center small-12 columns">
             <h1>The Dwarf Underground</h1>
