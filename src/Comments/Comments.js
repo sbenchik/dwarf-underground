@@ -5,8 +5,11 @@ class Comments extends Component{
     render(){
         return(
             <form>
-                <input type="text"/>
-                <button type="submit" className="button">Reply</button> 
+                <textarea className="comment-form" type="text"/>
+                <a className="article-link">
+                    <i className="fa fa-mail-forward"></i>
+                    <span className="article-link-text">Reply</span>
+                </a>
             </form>
         )
     }
