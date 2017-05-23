@@ -22,7 +22,7 @@ class Links extends Component{
                     <span className="article-link-text">Comments</span>
                 </a>
                 <a className="article-link" href="#">
-                    <i className="fa fa-share"></i>
+                    <i className="fa fa-share-alt"></i>
                     <span className="article-link-text">Share Post</span>
                 </a>
                 {this.state.commentsVisible ? <Comments /> : null}
