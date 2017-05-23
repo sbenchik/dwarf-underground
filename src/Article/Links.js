@@ -3,10 +3,21 @@ import Comments from '../Comments/Comments'
 import './Article.css'
 
 class Links extends Component{
+    constructor(){
+        super()
+        this.state = {
+            commentsVisible: false,
+        }
+    }
+    
+    showComments(ev){
+        this.setState({commentsVisible: !this.state.commentsVisible,})
+    }
+
     render(){
         return(
             <div className="article-links">
-                <a className="article-link">
+                <a className="article-link" onClick={this.showComments.bind(this)}>
                     <i className="fa fa-comments-o"></i>
                     <span className="article-link-text">Comments</span>
                 </a>
@@ -14,6 +25,7 @@ class Links extends Component{
                     <i className="fa fa-share"></i>
                     <span className="article-link-text">Share Post</span>
                 </a>
+                {this.state.commentsVisible ? <Comments /> : null}
             </div>
         )
     }

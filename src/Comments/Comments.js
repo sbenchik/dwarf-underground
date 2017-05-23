@@ -6,7 +6,7 @@ class Comments extends Component{
         return(
             <form>
                 <input type="text"/>
-                <button type="submit" className="expanded button"></button> 
+                <button type="submit" className="button">Reply</button> 
             </form>
         )
     }
