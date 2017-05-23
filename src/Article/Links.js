@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Comments from '../Comments/Comments'
 import './Article.css'
 
 class Links extends Component{
     render(){
         return(
             <div className="article-links">
-                <a className="article-link" href="#">
+                <a className="article-link">
                     <i className="fa fa-comments-o"></i>
                     <span className="article-link-text">Comments</span>
                 </a>
